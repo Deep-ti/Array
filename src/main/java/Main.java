@@ -1,7 +1,9 @@
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("########################################################################");
+        System.out.println("####################################START####################################");
         System.out.println("Problem1");
         System.out.println("How do you find the missing number in a given integer array of 1 to 100?");
         MissingInteger missingInteger = new MissingInteger();
@@ -53,5 +55,15 @@ public class Main {
         RemoveDuplicates removeDuplicates = new RemoveDuplicates();
         removeDuplicates.removeDuplicates(duplicateNumbers);
         System.out.println();
+        System.out.println("########################################################################");
+        System.out.println("Problem6");
+        System.out.println("How is an integer array sorted in place using the quicksort algorithm?");
+        Quicksort algorithm = new Quicksort();
+        int[] unsorted = {77, 93, 84, 40, 22, 89, 37, 1, 12, 11, 18, 15};
+        System.out.println(Arrays.toString(unsorted));
+        algorithm.sort(unsorted);
+        System.out.println(Arrays.toString(unsorted));
+        System.out.println();
+        System.out.println("####################################END####################################");
     }
 }
